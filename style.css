@@ -1,12 +1,8 @@
-*{
-    margin: 0;
-}
 body{
-    align-items: center ;
     text-align: center;
-    margin: 0;
+    align-items: center;
 }
-.indice {
-    width: 90vh;
+.índice.jpeg{
     height: 90vh;
+    width: 90vh;
 }
