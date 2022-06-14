@@ -1,17 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <H1>Oseias</H1>
-    <img class="índice.jpeg" src="índice.jpeg" >
-    <div>
-    <a href="https://www.google.com/search?q=fire+logo&client=firefox-b-lm&tbm=isch&source=iu&ictx=1&vet=1&fir=vQp9Dfe68LvGBM%252Ca9SFklfOt3YP_M%252C_%253BTkbEt81tM5h1BM%252C6fWA_Gt0gyKAXM%252C_%253Bmz6ZQnj6uIbDAM%252CcSuWjut4e2p2tM%252C_%253B10KKDUD6XUZB8M%252ChYV2Zq2c5yK4XM%252C_%253Bdumwkzyz0gspwM%252C3jQrwQxZ_rwGEM%252C_%253BkCaYLv2tb4ObJM%252CwEdBxFehkmNFQM%252C_%253BZdBKBRFB3GXj8M%252CoUUCwA8B8mlf7M%252C_%253B9bPx6SlN5g_KGM%252Cyrw9NLjmgpTM-M%252C_%253B0KEMvi8G-mEIeM%252CHdFhpQ4rF-VkuM%252C_%253B-LJTIKIUYAZogM%252CBcWr46NC-033KM%252C_%253BYZ1LuMWZFhz4oM%252C5h7vCIiJ3TNdrM%252C_%253BOvZ0DI_As_VzzM%252Ci15nTb_G1J-GSM%252C_%253BqeIy3ozn12vBsM%252CCAcw2a6orzc4QM%252C_%253BfggtodKhCxSLHM%252CY82qokGbR5vObM%252C_&usg=AI4_-kSEAJ3ZGv_tdosJFsFeEvg_Ds3ZUQ&sa=X&ved=2ahUKEwjVvOr0s634AhXDCbkGHTb0AgwQ9QF6BAgIEAE#imgrc=vQp9Dfe68LvGBM">Pokemon</a>
-    </div>
+   
+     <title>Meu contador</title>
+    <style>
+     *{
+         margin: 0;
+         box-sizing: border-box;
+     }
+
+     body{
+         min-height: 100vh;
+         background: black;
+         color: white;
+         display: grid;
+         place-items: center ;
+     }
+
+     section{
+         background: rgba(255, 255, 255, 20%);
+         padding: 20px;
+         border-radius: 5px;
+         text-align: center;    
+        }
+        p{
+            font-size: 100px;
+        }
+
+
+   </style>
+
+    <section>    
+       <h1>contador</h1>
+        <p>0</p>
+        <button onclick="diminuir()">menos</button></button>
+        <button onclick="aumentar()">mais</button></button>
+    </section>
+    
+    <script>
+
+    // estado da minha aplicação
+    let numero = 0;
+
+   // alteradores de estado
+function aumentar(){
+         numero = numero + 1
+         mostraNaTela()
+}
+
+    function diminuir(){
+        numero = numero -1
+        mostraNaTela()
+         }    
+    
+    
+    // jogar o estado da aplicação na tela
+    function mostraNaTela() {
+    const p = document.querySelector("p")
+    p.innerText = numero
+
+    }
+   
+    // iniciar
+    mostrarNaTela()
+   
+   </script>
+
 </body>
+
 </html>
